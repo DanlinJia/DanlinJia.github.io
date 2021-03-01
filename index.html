@@ -60,13 +60,49 @@
 							<article id="work">
 								<h2 class="major">Work</h2>
 								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<b>Dis-aggregated Storage System Simulation and Evaluation </b><p align="right">09/2020-present</p>
-								<i>Recent work </i>
+								<b>Dis-aggregated Storage System Simulation and Evaluation </b>
+								<i>Recent work </i><p align="right">09/2020-present</p>
 								<ul class="a">
 									<li>Build an integrated simulated dis-aggregated storage system with NS3 and MQSim. </li>
 									<li>Feed real workload traces from a public repository (i.e., SNIA) into the simulation system and evaluate system performance, including latency, throughput, and queue in delay. </li>
 									<li>Extract characteristics of request size and inter-arrival time from real workload traces. Generate synthetic traces with extracted characteristics. Feed synthetic traces into the simulation system to control workload characteristics and distributions </li>
 								</ul>
+								<b>Parameter Distribution Management Design in Distributed Deep Learning </b>
+								<i>Recent work </i><p align="right">03/2020-present</p>
+								<ul class="a">
+									<li>Investigate parameter distributions in distributed deep learning frameworks(e.g., MXNet), and find parameters are distributed evenly across Parameter Servers regardless, which increases communication overhead for small layers. </li>
+									<li>Design a mechanism to distribute parameters based on the size of each layer, considering data reliability and data consistency. </li>
+									<li>Integrate our design with MXNet and observe performance improvement. </li>
+								</ul>
+								<b>KV SSD Virtualization and Management for Container Orchestrations </b>
+								<i>Recent work </i><p align="right">09/2019-present</p>
+								<ul class="a">
+									<li>Investigate two popular container orchestrations(Kubernetes and Marathon on Mesos ), and understand their resource virtualization solutions. </li>
+									<li>Study KV SSD, a key-value storage drive, that significantly accelerates key-value store for steaming-data processing. </li>
+									<li>Build a storage system with MinIO and NKV on top of KV SSDs, which supports volume virtualization (e.g., Kubernetes Volume). </li>
+								</ul>
+								<b>Memory Allocation for Container-based Virtualization Design </b>
+								<i>Submitted to IEEE CLOUD’ 2020 </i><p align="right">04/2019-03/2020</p>
+								<ul class="a">
+									<li>Build a big data processing stack, including Spark, Yarn, and HDFS, on Docker containers and VMware virtual machines with NVMe SSD drives. </li>
+									<li>Analyze resource utilization (e.g., CPU, memory, I/O) on different virtual environments, and investigate the benefits of Docker container. </li>
+									<li>Design an efficient memory allocation scheme for containerized parallel systems to improve data processing latency. </li>
+								</ul>
+								<b>Memory Management of Spark Optimization </b>
+								<i>Published in IPCCC’ 2019 </i><p align="right">10/2017-04/2019</p>
+								<ul class="a">
+									<li>Investigate the performance of Spark with dynamic and static memory manager. </li>
+									<li>Analyze the impact of garbage collection mechanism on Spark. </li>
+									<li>Design and implement a new memory manager module in Spark 2.2.0, to improve the latencyof data processing. </li>
+								</ul>
+								<b>Automatic Cache Mechanism of Spark Design </b>
+								<i>Published in IEEE CLOUD’ 2018 </i><p align="right">01/2017-12/2018</p>
+								<ul class="a">
+									<li>Design an algorithm for multi-stage big data processing platforms to adaptively determine and cache the most valuable intermediate datasets that can be reused in the future. </li>
+									<li>Automate the decision of which RDDs to cache: this amounts to identifying nodes in a direct acyclic graph (DAG) representing computations whose outputs should persist in the memory. </li>
+									<li>Improve the performance of machine learning applications on Spark via decreasing the total work to recompute RDDs. </li>
+								</ul>
+								
 							</article>
 
 						<!-- About -->
